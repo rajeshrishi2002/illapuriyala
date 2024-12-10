@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Illa Puriyala</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div id="canvas-container"></div>
+    <main class="container">
+      <h1>Illa Puriyala</h1>
+      <div class="upload-section">
+        <input type="file" id="imageInput" accept="image/*" class="file-input">
+        <label for="imageInput" class="file-label">Choose Image</label>
+      </div>
+      <div class="preview-section">
+        <img id="preview" class="hidden">
+      </div>
+      <div class="result-section">
+        <div class="scanned-text">
+          <h2>Scanned Text</h2>
+          <p id="extractedText"></p>
+        </div>
+        <div class="translated-text">
+          <h2>Thanglish la Translation</h2>
+          <p id="translatedText"></p>
+        </div>
+        <button id="clearBtn" class="clear-btn">Clear Results</button>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
